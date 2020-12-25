@@ -84,83 +84,91 @@ body{
  /* SLIDER */
 
 
- .slider{
-position:relative;
-    width:100%;
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-    border: 10px solid #fff;
+ body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* text-align: center; */
+    /* overflow: hidden; */
+  }
+  
+ 
    
- }
-
- .middle{
-    position:relative;
-    /* WAS ABSOLUTE */
- }
-
- .navigation{
-     position:absolute;
-      bottom:16px;
-     left:42%; 
-       /* transform:translateX(50%);  */
-     display:flex;
-     color:#fff;
- }
-
-.bar{
-    display :'block';
-    background:#fff;
-    height:8px;
-    width:30px;
-    margin:10px;
-    cursor:pointer;
-    opacity: 0.5;
-    border-radius: 10px; 
-    transition: all .4s ease;
-}
-
-.bar:hover{
-    opacity: 0.8;
-    transform: scale(1.3);
-}
-
-
-input.r{
-position:absolute;
-visibility:hidden;
-}
-
-
-.slides{
-    width:300%;
-height:100%;
-display:flex;
-}
-
-.slide{
-    width:33.33%;
-    transition: left .6s ease;
-}
-
-.slide img{ 
-    max-width: 100%; 
-    max-height: 100%; 
-    /* object-fit: cover;  */
-
+  .slider{ 
+position:relative; 
+    width:100%; 
+    height: 100%; 
+    overflow: hidden; 
+    margin:0; 
+    text-align: center; 
+    border: 10px solid #fff; 
+    
+ } 
+ 
+ .middle{ 
+    position:relative; 
+    /* WAS ABSOLUTE */ 
+ } 
+ 
+ .navigation{ 
+     position:absolute; 
+      bottom:16px; 
+     left:42%;  
+       /* transform:translateX(50%);  */ 
+     display:flex; 
+     color:#fff; 
+ } 
+ 
+.bar{ 
+    display :'block'; 
+    background:#fff; 
+    height:8px; 
+    width:30px; 
+    margin:10px; 
+    cursor:pointer; 
+    opacity: 0.5; 
+    border-radius: 10px;  
+    transition: all .4s ease; 
 } 
-/* TRANSITION SLIDE IMAGES*/
-#r1:checked ~ .s1{
-    margin-left:0;
-    flex-shrink: 0;}
-#r2:checked ~ .s1{
-    margin-left:33.33%;
-    flex-shrink: 0;}
-#r3:checked ~ .s1{
-    margin-left:66.67%;
-    flex-shrink: 0;}
-
-
-
-
-
+ 
+.bar:hover{ 
+    opacity: 0.8; 
+    transform: scale(1.3); 
+} 
+ 
+ 
+input.r{ 
+position:absolute; 
+visibility:hidden; 
+} 
+ 
+ 
+.slides{ 
+    width:300%; 
+height:100%; 
+display:flex; 
+} 
+ 
+.slide{ 
+    width:33.33%; 
+    height: 100%; 
+    transition: all .6s ease; 
+} 
+ 
+.slide img{  
+    max-width: 100%;  
+    max-height: 100%;  
+    float:left; 
+    /* object-fit: cover;  */ 
+ 
+}  
+/* TRANSITION SLIDE IMAGES*/ 
+#r1:checked ~ .s1{ 
+    margin-left:0%; 
+  } 
+#r2:checked ~ .s1{ 
+    margin-left:33.33%; 
+    } 
+#r3:checked ~ .s1{ 
+    margin-left:66.67%; 
+    }
