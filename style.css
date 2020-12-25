@@ -87,26 +87,29 @@ body{
  body, html {
     padding: 0;
     margin: 0;
-    width: 100%;
+    /* width: 100%; */
     /* text-align: center; */
     /* overflow: hidden; */
   }
   
  
    
-  .slider{ 
-position:relative; 
+  .slider{  
+      /* position: relative;  */
     width:100%; 
     height: 100%; 
-    overflow: hidden; 
-    margin:0; 
-    text-align: center; 
+     overflow: hidden;  
+     margin:0; 
+    text-align: center;  
     border: 10px solid #fff; 
     
  } 
  
  .middle{ 
-    position:relative; 
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     /* WAS ABSOLUTE */ 
  } 
  
@@ -114,7 +117,7 @@ position:relative;
      position:absolute; 
       bottom:16px; 
      left:42%;  
-       /* transform:translateX(50%);  */ 
+     transform:translateX(50%);  
      display:flex; 
      color:#fff; 
  } 
@@ -137,7 +140,7 @@ position:relative;
 } 
  
  
-input.r{ 
+input[name="r"]{ 
 position:absolute; 
 visibility:hidden; 
 } 
@@ -151,15 +154,15 @@ display:flex;
  
 .slide{ 
     width:33.33%; 
-    height: 100%; 
+    /* height: 100%;  */
     transition: all .6s ease; 
 } 
  
 .slide img{  
     max-width: 100%;  
     max-height: 100%;  
-    float:left; 
-    /* object-fit: cover;  */ 
+    /* float:left;  */
+     /* object-fit: cover;   */
  
 }  
 /* TRANSITION SLIDE IMAGES*/ 
@@ -167,8 +170,8 @@ display:flex;
     margin-left:0%; 
   } 
 #r2:checked ~ .s1{ 
-    margin-left:33.33%; 
+    margin-left:-33.33%; 
     } 
 #r3:checked ~ .s1{ 
-    margin-left:66.67%; 
+    margin-left:-66.67%; 
     }
