@@ -87,21 +87,19 @@ body{
  body, html {
     padding: 0;
     margin: 0;
-    /* width: 100%; */
-    /* text-align: center; */
-    /* overflow: hidden; */
+   
   }
   
  
    
   .slider{  
-      /* position: relative;  */
+ 
     width:100%; 
     height: 100%; 
      overflow: hidden;  
      margin:0; 
     text-align: center;  
-    border: 10px solid #fff; 
+    border-bottom: none; 
     
  } 
  
@@ -110,7 +108,7 @@ body{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    /* WAS ABSOLUTE */ 
+  
  } 
  
  .navigation{ 
@@ -141,28 +139,26 @@ body{
  
  
 input[name="r"]{ 
-position:absolute; 
-visibility:hidden; 
+    position:absolute; 
+    visibility:hidden; 
 } 
  
  
 .slides{ 
     width:300%; 
-height:100%; 
-display:flex; 
+    height:100%; 
+    display:flex; 
 } 
  
 .slide{ 
     width:33.33%; 
-    /* height: 100%;  */
     transition: all .6s ease; 
 } 
  
 .slide img{  
     max-width: 100%;  
-    max-height: 100%;  
-    /* float:left;  */
-     /* object-fit: cover;   */
+    object-fit: cover;
+   
  
 }  
 /* TRANSITION SLIDE IMAGES*/ 
