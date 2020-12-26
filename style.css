@@ -11,12 +11,29 @@ font-family:'Montserrat', sans-serif;
 }
 
 body{
-    background: #000;
-    min-height:200vh;
+   
     font-family:'Montserrat', sans-serif; 
     font-weight: bolder;
+     align-items: center;
+     justify-content:center;
 }
 
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+   height:100%;
+  }
+
+  html { 
+    background: url(images/bg1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ 
 .pageContainer {
     position: relative;
     min-height: 100vh;
@@ -34,6 +51,7 @@ body{
      transition:0.5s;
      padding: 30px 100px;
      z-index: 100000; 
+    
 
  }
  header .logo{
@@ -87,11 +105,7 @@ body{
  /* SLIDER */
 
 
- body, html {
-    padding: 0;
-    margin: 0;
-   height:100%;
-  }
+
   
  
    
@@ -208,7 +222,76 @@ input[name="r"]{
     transform:translateY(-10px);
 }
 
+/* MY 3rd SECTION */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+   
+  }
+  
+   .span1 {
+    grid-column: 1 / span 11;
+  }
 
+  .span2 {
+    grid-column: 5 / span 6;
+  }
+
+  .span3 {
+    grid-column: 2 / span 4;
+  }
+
+  .span4 {
+    grid-column: 5 / span 2;
+  }
+
+  /* centering text */
+  .section {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: black;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: lime; */
+    padding: 5rem;
+    margin:2rem;
+    color:white;
+  }
+  h2{
+    color:white;
+    text-align:center;
+    margin:3rem;
+}
+
+.parent p a{
+    text-decoration:none;
+    color:white;
+      transition: 0.2s;
+}
+  /* CURSOR FOR 3rd SECTION */
+ 
+  .cursor{
+      display:none;
+      position:fixed;
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      background:white;
+      transition:0.1s;
+      transform: translate(-50%,-50%);
+      pointer-events: none;
+      
+       
+  }
+
+ 
+ .parent:hover .cursor{
+    transform: scale(3);
+    mix-blend-mode:difference; 
+    display:flex;
+ }
+ 
 
       /*
       .footContainer {
