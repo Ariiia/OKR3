@@ -16,6 +16,7 @@ body{
     font-weight: bolder;
      align-items: center;
      justify-content:center;
+     text-align:center;
 }
 
 
@@ -24,6 +25,7 @@ body, html {
     padding: 0;
     margin: 0;
    height:100%;
+   min-height: 100%;
   }
 
   html { 
@@ -209,6 +211,7 @@ input[name="r"]{
     
  .info{
      padding:1rem;
+     
  }   
  .card img{
      width:100%;
@@ -220,6 +223,17 @@ input[name="r"]{
 
  }
 
+ strong{
+     font-size: 1.5rem;
+
+ }
+
+
+ .info p{
+     font-weight:500;
+     margin:1rem;
+ }
+
 .card:hover{
     transform:translateY(-10px);
 }
@@ -227,24 +241,47 @@ input[name="r"]{
 /* MY 3rd SECTION */
 .parent {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 2fr);
    
   }
   
    .span1 {
-    grid-column: 1 / span 11;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.5)), url("images/gr2.jpg");
+    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
+background-repeat: no-repeat;
+    grid-column: 1 / span 12;
   }
 
   .span2 {
-    grid-column: 5 / span 6;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), url("images/design.jpg");
+    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 6 / span 6;
   }
 
   .span3 {
-    grid-column: 2 / span 4;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), url("images/gr10.jpg");
+    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2 / span 6;
   }
 
   .span4 {
-    grid-column: 5 / span 2;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)), url("images/gr4.jpg");
+background-size: 100% auto;
+background-size: cover;
+background-repeat: no-repeat;
+    grid-column: 8 / span 3;
   }
 
   /* centering text */
@@ -256,8 +293,9 @@ input[name="r"]{
     /* border-width: 5px;
     border-style: solid;
     border-color: lime; */
-    padding: 5rem;
-    margin:2rem;
+    padding: 7rem;
+    margin-top:1rem;
+    margin-left: 0;
     color:white;
   }
  
@@ -283,18 +321,40 @@ input[name="r"]{
        
   }
 
+.section p{
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      font-size: 2rem;
+
+  }
+
+  div.parent{
+      pointer-events: none;
+  }
+  div.section{
+    pointer-events: auto;
+}
+
  
+
  .parent:hover .cursor{
     transform: scale(3);
     mix-blend-mode:difference; 
     display:flex;
  }
+
+
+
  
+ 
+
+
 /* FOOTER */
 
 
 footer{
     background-color:white;
+ width: 100%;
 
 }
 
@@ -302,6 +362,7 @@ footer{
       .pageContainer {
        min-height:100%;
        margin-bottom: auto;
+       
 
       } 
       .pageContainer:after{
@@ -314,5 +375,43 @@ footer{
       .foot a{
           text-decoration: none;
           color:black;
-          
+          margin:2em;
+          padding:1rem;          
+          text-align: center;
+          font-weight:400;
+      }
+    div.footContainer{
+        margin:2em;
+        padding:1rem; 
+        text-align: center;  
+    }
+    .footContainer{
+        
+            margin:2em;
+            padding:1rem; 
+            text-align: center;  
+    }
+    .foot{
+        margin:2rem;
+    }
+
+
+    /* border */
+    h1,h2 {
+        text-align:center;
+        padding-bottom:0.3em;
+        background: /* gradient can be an image */
+          linear-gradient(
+            to left, 
+            rgba(0,0,0,0) 25%,
+            #740B00 40%,
+            #c90d00 50%,
+            #740B00 60%,
+            rgba(0,0,0,0) 75%
+          )
+          left 
+          bottom
+           
+          no-repeat; 
+        background-size:100% 2.5px ;/* if linear-gradient, we need to resize it */
       }
