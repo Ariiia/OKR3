@@ -355,6 +355,8 @@ background-repeat: no-repeat;
 footer{
     background-color:white;
  width: 100%;
+ position: fixed;
+ bottom:0;
 
 }
 
@@ -370,7 +372,7 @@ footer{
           display:block;
       }
       .pageContainer:after, footer{
-          height:1fr;
+          height:0.2fr;
       }
       .foot a{
           text-decoration: none;
