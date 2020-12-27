@@ -143,7 +143,7 @@ body, html {
       position:relative;  
 
       bottom:3rem; 
-     left:40%;  
+     left:45%;  
      display:flex; 
      color:#fff; 
  } 
@@ -381,7 +381,6 @@ footer .container{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap:wrap;
-    flex-direction: row;
 }
 
 footer .container .sec{
@@ -442,6 +441,7 @@ footer p{
 }
 h3,h4,h5{
     font-size:0.9rem;
+    margin-bottom: 1rem;
     background: /* gradient can be an image */
     linear-gradient(
       to right, 
@@ -464,13 +464,7 @@ h3,h4,h5{
 
       } 
     
-    .icon{
-        z-index: 10000000;
-            position: sticky;
-            bottom:0;
-            left:0;
-     
-    }
+   
 
 
     /* border */
@@ -506,6 +500,55 @@ h3,h4,h5{
     }
 
 
-    @media{
+    @media only screen and (max-width: 560px) {
+        *{
+            font-size:10px;
+        }
+      header .logo{
+           display: none;
+       }
+       header{
+           padding: 3rem 9%;
+       }
+
+      header.sticky{
+           padding: 0.5rem 9%;
+       }
+       .navigation{
+           left: 30%;
+       }
+       footer .container{
+        flex-direction: column;
+       }
+
+       footer .container .sec.first {
+        width: 100%;}
+
+        footer .container .sec.second {
+            width: 100%;}
+
+        footer .container .sec.third {
+                width: 100%;}
+    
+        footer{
+            text-align: center;
+            font-size:1rem;
+            margin-bottom: -1.5rem;
+        }
+        h3, h4, h5{
+            background: none;
+        }   
         
+        footer p{
+            margin-bottom: 0.7rem;
+        }
+        .slider.middle{
+            margin-bottom: -5rem;
+        }
+
+        h1,h2{
+            font-size: 2rem;
+        }
+       
     }
+    
