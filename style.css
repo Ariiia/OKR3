@@ -64,8 +64,11 @@ body, html {
     
 
  }
+
  header .logo{
-     position: relative;
+     position: sticky;
+     top:0;
+     left:0;
      color: white;
       text-decoration: none; 
      font-size: 2em;
@@ -205,6 +208,7 @@ input[name="r"]{
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
           grid-gap:1rem;
+          overflow: hidden;
       }
 
  
@@ -217,9 +221,10 @@ input[name="r"]{
      width:100%;
  }     
 
- .card{
-     
-    transition:transform 1s;
+ .section{
+    
+      
+     transition:transform 1s; 
 
  }
 
@@ -234,10 +239,15 @@ input[name="r"]{
      margin:1rem;
  }
 
+/* .card:hover{
+    /transform:translateY(-10px); 
+   
+     
+   
+} */
 .card:hover{
-    transform:translateY(-10px);
+    animation: zoom 10s ease-in-out;
 }
-
 /* MY 3rd SECTION */
 .parent {
     display: grid;
@@ -309,6 +319,7 @@ background-repeat: no-repeat;
  
   .cursor{
       display:none;
+
       position:fixed;
       width:20px;
       height:20px;
@@ -378,7 +389,7 @@ footer .container .sec{
   
 
 }
-footer .container .sec.aboutus{
+footer .container .sec.first{
    width:33%;
    text-decoration: none;
    list-style: none;
@@ -386,7 +397,7 @@ footer .container .sec.aboutus{
 }
 footer ul{
     font-size: smaller;
-    font-weight:300;
+    
 }
 .second{
     position:relative;
@@ -402,6 +413,7 @@ footer ul{
     text-decoration: none;
     margin-bottom:1rem;
     display: inline-block;
+    font-weight:300;
     
 }
 .second ul li a:hover,.third ul li a:hover{
@@ -414,14 +426,15 @@ footer ul{
      margin-right: 0!important;  
 }
 .footer-bot{
+    position: relative;
     width:100%;
     background:white;
     text-align: center;
     color:black;
-    opacity: .9;
     padding:8px 100px;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
+
 footer p{
     color:#999;
     font-weight: 500;
@@ -451,7 +464,13 @@ h3,h4,h5{
 
       } 
     
-
+    .icon{
+        z-index: 10000000;
+            position: sticky;
+            bottom:0;
+            left:0;
+     
+    }
 
 
     /* border */
@@ -473,3 +492,20 @@ h3,h4,h5{
           no-repeat; 
         background-size:100% 2.5px ;/* if linear-gradient, we need to resize it */
       }
+
+      @keyframes zoom {
+        0% {
+            transform: scale(1,1);
+        }
+        50% {
+            transform: scale(1.1,1.1);
+        }
+        100% {
+            transform: scale(1,1);
+        }
+    }
+
+
+    @media{
+        
+    }
