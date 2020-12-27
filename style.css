@@ -15,7 +15,7 @@ body{
     font-family:'Montserrat', sans-serif; 
     font-weight: bolder;
      align-items: center;
-     justify-content:center;
+     justify-content:flex-end;
      text-align:center;
 }
 
@@ -355,11 +355,94 @@ background-repeat: no-repeat;
 footer{
     background-color:white;
  width: 100%;
- position: fixed;
- bottom:0;
+ height:auto;
+ position: relative;
+ padding: 1rem 2rem;
+ display:flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ color: black;
+ text-align: left;
 
 }
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
 
+footer .container .sec{
+    margin-right: 2rem;
+  
+
+}
+footer .container .sec.aboutus{
+   width:33%;
+   text-decoration: none;
+   list-style: none;
+  
+}
+footer ul{
+    font-size: smaller;
+    font-weight:300;
+}
+.second{
+    position:relative;
+    width:33%;
+    
+}
+
+.second ul li,.third ul li {
+    list-style: none;
+}
+.second ul li a,.third ul li a{
+    color:#999;
+    text-decoration: none;
+    margin-bottom:1rem;
+    display: inline-block;
+    
+}
+.second ul li a:hover,.third ul li a:hover{
+    color:red;
+    
+}
+
+.third{
+     width:auto;
+     margin-right: 0!important;  
+}
+.footer-bot{
+    width:100%;
+    background:white;
+    text-align: center;
+    color:black;
+    opacity: .9;
+    padding:8px 100px;
+    font-size: 0.5rem;
+}
+footer p{
+    color:#999;
+    font-weight: 500;
+    font-size:0.8rem;
+}
+h3,h4,h5{
+    font-size:0.9rem;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to right, 
+      rgba(0,0,0,0) -5%,
+      #740B00 20%,
+      #c90d00 35%,
+      #740B00 40%,
+      rgba(0,0,0,0) 50%
+    )
+    right 
+    bottom
+     
+    no-repeat; background-size:100% 1px ;
+}
        
       .pageContainer {
        min-height:100%;
@@ -367,29 +450,8 @@ footer{
        
 
       } 
-     .footer{
-         height:400px;
-         background-color: white;
-         color:black;
-         position:sticky;
-         min-width: 100%;
-     }
-.footer .footer-content{
-    border: 10px solid red;
-    /* width:100%; */
-    height:350px;
-}
+    
 
-.footer .footer-bot{
-         background-color: wheat;
-         text-align:center;
-         position: absolute;;
-         bottom:0px;
-         left:0px;
-         padding-top:1rem;
-         width:100%;
-
-     }
 
 
     /* border */
