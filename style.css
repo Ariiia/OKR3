@@ -410,7 +410,7 @@ footer ul{
 }
 
 .third{
-     width:auto;
+     width:calc(33%+1px);
      margin-right: 0!important;  
 }
 .footer-bot{
