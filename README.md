@@ -1,2 +1,2 @@
 OKR3
-![validation screen](Validation.png?raw=true)
+![Validation.png](Validation.png?raw=true)
